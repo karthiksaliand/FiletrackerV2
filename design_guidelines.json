@@ -1,0 +1,161 @@
+{
+  "typography": {
+    "font_family": {
+      "headings": "Oswald",
+      "body": "Manrope",
+      "monospace": "JetBrains Mono"
+    },
+    "scale": {
+      "h1": {
+        "size": 32,
+        "line_height": 40,
+        "weight": "700",
+        "letter_spacing": -0.5
+      },
+      "h2": {
+        "size": 24,
+        "line_height": 32,
+        "weight": "600",
+        "letter_spacing": -0.3
+      },
+      "h3": {
+        "size": 20,
+        "line_height": 28,
+        "weight": "600"
+      },
+      "body_lg": {
+        "size": 18,
+        "line_height": 26,
+        "weight": "400"
+      },
+      "body_md": {
+        "size": 16,
+        "line_height": 24,
+        "weight": "400"
+      },
+      "body_sm": {
+        "size": 14,
+        "line_height": 20,
+        "weight": "400"
+      },
+      "caption": {
+        "size": 12,
+        "line_height": 16,
+        "weight": "500",
+        "letter_spacing": 0.5,
+        "text_transform": "uppercase"
+      }
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#1E293B",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F1F5F9",
+      "secondary_foreground": "#0F172A",
+      "accent": "#DC2626",
+      "accent_foreground": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "muted": "#E2E8F0",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444"
+    },
+    "status": {
+      "pending": "#F59E0B",
+      "approved": "#10B981",
+      "rejected": "#EF4444",
+      "escalated": "#DC2626"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "xxl": 48
+    },
+    "radius": {
+      "sm": 4,
+      "md": 8,
+      "lg": 12,
+      "full": 9999
+    },
+    "grid": {
+      "cols": 4,
+      "gap": 16
+    }
+  },
+  "components": {
+    "Button": {
+      "styles": {
+        "base": "h-12 flex-row items-center justify-center rounded-md px-6 active:opacity-90",
+        "primary": "bg-primary",
+        "secondary": "bg-secondary border border-border",
+        "ghost": "bg-transparent",
+        "destructive": "bg-error"
+      },
+      "text": {
+        "primary": "text-primary-foreground font-bold text-base",
+        "secondary": "text-secondary-foreground font-medium text-base",
+        "ghost": "text-primary font-medium text-base",
+        "destructive": "text-white font-bold text-base"
+      }
+    },
+    "Card": {
+      "base": "bg-white rounded-lg border border-border p-4 shadow-sm",
+      "hover": "border-primary"
+    },
+    "Input": {
+      "base": "h-12 rounded-md border border-input bg-background px-3 text-base text-foreground focus:border-primary focus:ring-1 focus:ring-primary",
+      "error": "border-error focus:ring-error"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
+    },
+    "gradients": {
+      "login_overlay": ["rgba(30, 41, 59, 0.8)", "rgba(30, 41, 59, 0.95)"]
+    }
+  },
+  "image_urls": {
+    "auth": {
+      "login_bg": "https://images.unsplash.com/photo-1767658647133-2168a9cfc1d1?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Minimalist modern architecture for login background"
+    },
+    "placeholders": {
+      "avatar": "https://ui-avatars.com/api/?background=random",
+      "empty_state": "https://illustrations.popsy.co/gray/surveillance-camera.svg"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'manrope' for body text and 'oswald' for headings.",
+    "Implement 'Swiss Style' layouts: High contrast, grid-based, strong typography.",
+    "Use role-based layouts: Admin gets data density, Case Worker gets large action buttons.",
+    "Status badges must use 'JetBrains Mono' for that technical file-tracking feel.",
+    "File Numbers should be prominently displayed like 'FILE-2024-001'.",
+    "Use Reanimated for shared element transitions between lists and details.",
+    "Ensure all touch targets are at least 44x44 points.",
+    "Follow the defined color palette strictly—no gradients unless specified.",
+    "Use 'sonner-native' or custom toast for notifications.",
+    "For icons, use @expo/vector-icons (Feather or MaterialCommunityIcons).",
+    "IMPORTANT: Write code in .js files as requested, even if the project seems to be TS. If you must use TS, ensure strict typing."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this.",
+    "Don't make generic centered layouts. Use grids and negative space.",
+    "Create depth through layered design elements.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include data-testid attribute.",
+    "NEVER use AI assistant Emoji characters."
+  ]
+}
